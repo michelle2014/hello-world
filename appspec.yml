@@ -1,7 +1,7 @@
 version: 0.0
 os: centOS
 files:
-  - source: /
+  - source: .
     destination: /var/www/html/
 hooks:
   AfterInstall:
