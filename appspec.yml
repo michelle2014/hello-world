@@ -4,11 +4,16 @@ files:
   - source: .
     destination: /var/www/html/
 hooks:
+  BeforeInstall:
+    echo "test before install"
+    # - location: script/cleanup.sh
+    #   timeout: 300
+    #   runas: root
   AfterInstall:
-   - location: setup.sh
+   - location: script/setup.sh
      timeout: 300
      runas: root
   ApplicationStart:
-   - location: run.sh
+   - location: script/run.sh
      timeout: 300
      runas: root
