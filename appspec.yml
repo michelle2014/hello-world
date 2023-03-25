@@ -11,12 +11,12 @@ hooks:
   Install:
     - location: script/install.sh
       timeout: 300
-     runas: root
+      runas: root
   AfterInstall:
-   - location: script/setup.sh
-     timeout: 300
-     runas: root
+    - location: script/setup.sh
+      timeout: 300
+      runas: root
   ApplicationStart:
-   - location: script/run.sh
-     timeout: 300
-     runas: root
+    - location: script/run.sh
+      timeout: 300
+      runas: root
