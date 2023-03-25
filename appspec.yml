@@ -8,6 +8,10 @@ hooks:
     - location: script/cleanup.sh
       timeout: 300
       runas: root
+  Install:
+    - location: script/install.sh
+      timeout: 300
+     runas: root
   AfterInstall:
    - location: script/setup.sh
      timeout: 300
