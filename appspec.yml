@@ -4,10 +4,10 @@ files:
   - source: .
     destination: /var/www/html/
 hooks:
-  BeforeInstall:
-    - location: script/cleanup.sh
-      timeout: 300
-      runas: root
+  # BeforeInstall:
+  #   - location: script/cleanup.sh
+  #     timeout: 300
+  #     runas: root
   Install:
     - location: script/install.sh
       timeout: 300
