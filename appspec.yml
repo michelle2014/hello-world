@@ -8,6 +8,10 @@ hooks:
     - location: scripts/setup.sh
       timeout: 300
       runas: root
+  ValidateService:
+    - location: scripts/validate.sh
+      timeout: 300
+      runas: root
   ApplicationStart:
     - location: scripts/run.sh
       timeout: 300
